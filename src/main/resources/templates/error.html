@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="pl">
+  <meta charset="UTF-8">
+  <title>Error</title>
+</head>
+<body>
+<br>
+
+<p th:if="${osoba.imie.length() < 3}"
+   th:text="'Ilość liter w imieniu ' + ${osoba.imie.length()} + ' Czy to nie za mało ?'"></p>
+
+<p th:if="${osoba.nazwisko.length() < 1}"
+   th:text="'Ilość liter w nazwisku ' + ${osoba.nazwisko.length()} + ' Czy to nie za mało ?'"></p>
+<p th:if="${osoba.telefon.length() < 3}"
+   th:text="'Ilość cyfr w numerze ' + ${osoba.telefon.length()} + ' Czy to nie za mało ?'"></p>
+
+<p th:if="${osoba.mail.length() < 3}"
+   th:text="'Ilość liter w mailu ' + ${osoba.mail.length()} + ' Czy to nie za mało ?'"></p>
+
+
+
+</body>
+</html>

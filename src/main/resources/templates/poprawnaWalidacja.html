@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dane osoby</title>
+</head>
+<body>
+<h2>Dane osoby przesłane z formularza:<br>
+  <br><div th:text="${osobaFormularz.imie}">Imię</div>
+  <div th:text="${osobaFormularz.nazwisko}">Nazwisko
+  </div></h2>
+<p th:text="${osobaFormularz.mail}"> bb</p>
+<p th:text="${osobaFormularz.telefon}"> cc </p>
+
+</body>
+</html>
